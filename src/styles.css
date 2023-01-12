@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .2)), url('assets/img/bgbureaux.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

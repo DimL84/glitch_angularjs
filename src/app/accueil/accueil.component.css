@@ -1,0 +1,11 @@
+.logo{
+    border-radius: 50%;
+    border: 5px solid  rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0, .20);;
+    height: 258px;
+    width: 258px;
+}
+
+.card{
+    opacity: .85;
+}

@@ -1,0 +1,41 @@
+{
+    "footer":{
+        "partner":[
+            {
+                "img_url":"assets/img/afpar-logo",
+                "img_url_alt":"Logo AFPAR",
+                "img_width":"40",
+                "img_height":"40",
+                "img_extension":".png"
+            },
+            {
+                "img_url":"assets/img/LogoWoody",
+                "img_url_alt":"Logo Woody",
+                "img_width":"40",
+                "img_height":"40",
+                "img_extension":".jpg"
+            },
+            {
+                "img_url":"assets/img/Logo_Meteo_France",
+                "img_url_alt":"Logo Meteo France",
+                "img_width":"40",
+                "img_height":"40",
+                "img_extension":".png"
+            },
+            {
+                "img_url":"assets/img/SFR_logo_2014",
+                "img_url_alt":"Logo SFR",
+                "img_width":"40",
+                "img_height":"40",
+                "img_extension":".png"
+            },
+            {
+                "img_url":"assets/img/avatar",
+                "img_url_alt":"Logo avatar",
+                "img_width":"40",
+                "img_height":"40",
+                "img_extension":".jpg"
+            }
+        ]
+    }
+}

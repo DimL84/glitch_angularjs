@@ -1,0 +1,85 @@
+<!--nav bar -->
+<div class="mb-5">
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+        <div class="d-flex">
+            <img src="assets/img/afpar-logo.png" width="64" height="64" alt="" class="ms-2">
+            <a class="navbar-brand ms-3 fs-2" [routerLink]="['']">Glit-Ch</a>
+        </div>
+        <div class="me-3">
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Identifiant" aria-label="Id">
+                <input class="form-control me-2" type="password" placeholder="Mot de passe" aria-label="Mdp">
+                <button class="btn btn-outline-success" type="submit"><fa-icon [icon]="faRightToBracket"></fa-icon></button>
+            </form>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary " *ngIf="currentUrl != '/accueil'">
+        <ul class="navbar-nav ms-3">
+            <li class="nav-item active">
+                <a class="nav-link ps-0" [routerLink]="['']"><fa-icon [icon]="faHouse" class="me-1"></fa-icon>Accueil</a>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" role="button" id="dropdownMenuLink" 
+                    data-bs-toggle="dropdown" aria-expanded="false"><fa-icon [icon]="faCommentDots" class="me-1"></fa-icon>Messagerie</a>
+                
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Message</a></li>
+                        <li><a class="dropdown-item" href="#">Signalement</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Competences"><fa-icon [icon]="faPersonBiking" class="me-1"></fa-icon>Activité</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Biographie"><fa-icon [icon]="faBed" class="me-2"></fa-icon>Gestion Chambres</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Competences"><fa-icon [icon]="faChartLine" class="me-2"></fa-icon>Statistique</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div>
+    <router-outlet></router-outlet>
+</div>
+
+<footer class="navbar navbar-expand-lg navbar-dark bg-dark py-2 mt-5 justify-content-between">
+    <div class="d-flex flex-wrap" id="navbarNav">
+        <a class="navbar-brand ms-3 d-flex align-items-center" [routerLink]="['']">&copy; Glit-Ch</a>
+        <ul class="nav ">
+            <li class="nav-item active">
+                <img class="icon m-2 " width="40px" height="40px" src="assets/img/Logo_Meteo_France.png" alt='Logo AFPAR' />
+            </li>
+            <li class="nav-item active">
+                <img class="icon m-2 " width="40px" height="40px" src="assets/img/Logo_Meteo_France.png" alt='Logo AFPAR' />
+            </li>
+            <li class="nav-item active">
+                <img class="icon m-2 " width="40px" height="40px" src="assets/img/Logo_Meteo_France.png" alt='Logo AFPAR' />
+            </li>
+            <li class="nav-item active">
+                <img class=" m-2 " width="40px" height="40px" src="assets/img/Logo_Meteo_France.png" alt='Logo AFPAR' />
+            </li>
+        </ul>
+    </div>
+
+    <div class="d-flex " id="navbarNav">
+        <ul class="navbar-nav mx-3">
+            <li class="nav-item active">  
+                <a class="nav-link" href="#Biographie">Mentions Légales</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Biographie">Contacts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Competences">Plan d'accés</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Competences">Règlement intérieur</a>
+            </li>
+        </ul>
+    </div>
+</footer>
